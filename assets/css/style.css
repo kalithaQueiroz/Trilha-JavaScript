@@ -14,6 +14,10 @@ section{
     margin: 100px auto;
 }
 
+header, main, footer {
+    text-align: center;
+}
+
 /* HEADER */
 
 .banner{
@@ -30,7 +34,6 @@ section{
     color: #fff;
     width: 500px;
     margin: auto;
-    text-align: center;
 }
 
 .banner h1{
@@ -77,8 +80,7 @@ button {
     background-color: transparent;
     border-image: linear-gradient(#ffd966, #c59800);
     border-image-slice: 10;
-    text-align: center;
-  }
+}
   
 button:hover {
     background-image: linear-gradient(#ffd966, #a78000);;
@@ -89,7 +91,6 @@ button:hover {
 
 #course-content{
     width: 800px;
-    text-align: center;
 }
 
 #course-content h2{
@@ -98,9 +99,8 @@ button:hover {
     font-weight: bold;
     letter-spacing: 3px;
     text-transform: uppercase;
-    margin-top: 70px;
+    margin-top: 30px;
     margin-bottom: 24px;
-    margin-left: 50px;
 }
 
 #course-content p{
@@ -110,6 +110,10 @@ button:hover {
 
 .modules{
     margin: 24px 0;
+}
+
+.modules ul{
+    padding-left: 0;
 }
 
 .module{
@@ -153,7 +157,6 @@ button:hover {
 }
 
 #professional-challenges{
-    text-align: center;
     width: 800px;
 }
 
@@ -178,9 +181,83 @@ button:hover {
 
 .rodape{
     color: #fff;
-    text-align: center;
     padding: 30px 0;
     background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(255, 192, 0, 0.2));
     font-weight: bold;
     border-bottom: 2px solid #ffc00080;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .banner {
+        height: auto;
+        padding-top: 40px;
+    }
+
+    .banner .banner-content {
+        width: 80%;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    #course-content {
+        width: 90%;
+    }
+
+    .module {
+        width: 90%;
+    }
+
+    #transform-world {
+        padding: 80px;
+    }
+
+    #transform-world p {
+        font-size: 40px;
+    }
+
+    #professional-challenges {
+        width: 90%;
+    }
+    #professional-challenges img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner .banner-content {
+        width: 90%;
+    }
+
+    #course-content {
+        width: 90%;
+    }
+
+    .module {
+        width: 90%;
+    }
+
+    #transform-world {
+        padding: 60px;
+    }
+
+    #transform-world p {
+        font-size: 30px;
+    }
+
+    #professional-challenges {
+        width: 90%;
+    }
+    #professional-challenges img{
+        width: 90%;
+    }
 }
