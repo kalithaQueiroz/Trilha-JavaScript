@@ -80,6 +80,7 @@ button {
     background-color: transparent;
     border-image: linear-gradient(#ffd966, #c59800);
     border-image-slice: 10;
+    margin-bottom: 24px;
 }
   
 button:hover {
